@@ -1,0 +1,42 @@
+name: user-agent
+
+on:
+  schedule:
+    - cron: '5 * * * *'
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v3
+
+      - name: config
+        run: |
+          git config --global user.email "<>"
+          git config --global user.name "user-agent bot"
+
+      - name: Set up Python
+        uses: actions/setup-python@v2
+        with:
+          python-version: '3.x'
+
+      - name: Install dependencies
+        run: |
+          python -m pip install --upgrade pip
+          
+      - name: Install requests module
+        run: python3 -m pip install requests bs4
+
+      - name: Execute Python script
+        run: python3 useragent.py
+
+        
+      - name: git add and commit
+        run: |
+          git add user_agent.txt
+          git diff --cached --quiet || (git commit -m "user-agent updated $(date +'%Y-%m-%d %H:%M:%S')" && git push)
