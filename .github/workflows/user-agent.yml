@@ -33,7 +33,7 @@ jobs:
         run: python3 -m pip install requests bs4
 
       - name: Execute Python script
-        run: python3 useragent.py
+        run: python3 user-agent.py
 
         
       - name: git add and commit
