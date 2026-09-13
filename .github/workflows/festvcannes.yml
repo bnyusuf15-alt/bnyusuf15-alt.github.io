@@ -24,6 +24,9 @@ jobs:
       - name: updating festvcannes
         run: python3 FR/festvcannes.py
         
+      - name: Updating clean festvcannes
+        run: python3 FR/festvcannesparatv.py
+        
       - name: git add
         run: |
           git add -A
