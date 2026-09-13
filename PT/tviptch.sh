@@ -9,7 +9,7 @@ fi
 
 mkdir -p res/26-2
 
-cat << EOF > PY/cnnpt.m3u8
+cat << EOF > PT/cnnpt.m3u8
 #EXTM3U
 #EXT-X-VERSION:3
 #EXT-X-STREAM-INF:BANDWIDTH=1393632,RESOLUTION=1280x720,CODECS="avc1.64001f,mp4a.40.2"
