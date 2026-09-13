@@ -85,11 +85,3 @@ body:
     attributes:
       label: Notes
       description: 'Anything else we should know about this broadcast?'
-
-  - type: checkboxes
-    attributes:
-      label: Contributing Guide
-      description: 'Please read this guide before posting your request'
-      options:
-        - label: I have read [Contributing Guide](https://github.com/iptv-org/iptv/blob/master/CONTRIBUTING.md)
-          required: true
