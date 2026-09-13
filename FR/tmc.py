@@ -10,11 +10,18 @@ USER_AGENT = 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_10_1) AppleWebKit/537.36
 s = requests.Session()
 resplink = s.get('https://mediainfo.tf1.fr/mediainfocombo/L_LCI?context=ONEINFO&format=hls', headers={'User-Agent': USER_AGENT})
 
+mastlnk = None
 try:
     response_json = json.loads(resplink.text)
     mastlnk = response_json["delivery"]["url"]
-except (KeyError, json.JSONDecodeError):
-    print("API'den beklenen JSON yapısı alınamadı. Gelen yanıt:")
+except (KeyError, json.JSONDecodeError, TypeError):
+    # JSON yapısı bulunamazsa regex ile m3u8 araması yap
+    match = re.search(r'https?://[^\s<>"]+?\.m3u8', resplink.text)
+    if match:
+        mastlnk = match.group(0)
+
+if not mastlnk:
+    print("API'den beklenen JSON yapısı alınamadı ve m3u8 bağlantısı bulunamadı. Gelen yanıt:")
     print(resplink.text)
     exit(1)
 
