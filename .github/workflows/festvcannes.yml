@@ -1,0 +1,35 @@
+name: festvcannes action
+
+on:
+  schedule:
+    - cron: '08 */3 * * *'
+  
+  workflow_dispatch:
+
+permissions:
+  contents: write
+  
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+    
+      - uses: actions/checkout@v3
+
+      - name: config
+        run: |
+          git config --global user.email "<>"
+          git config --global user.name "festvcannes bot"
+      
+      - name: updating festvcannes
+        run: python3 FR/festvcannes.py
+        
+      - name: git add
+        run: |
+          git add -A
+          ls -la 
+          
+      - name: commit & push
+        run: |
+          git commit -m "festvcannes updated"
+          git push
