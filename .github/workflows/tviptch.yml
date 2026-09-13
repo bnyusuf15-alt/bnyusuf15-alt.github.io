@@ -1,0 +1,48 @@
+name: tvi-pt_ch action
+on:
+  schedule:
+    - cron: "00 04,08,12,16,20,23 * * *"
+    
+  workflow_dispatch:
+
+concurrency:
+  group: tvi-pt-ch
+  cancel-in-progress: false  # Wait for previous run to complete
+
+permissions:
+  contents: write
+  
+jobs:
+  update-stream:
+    runs-on: ubuntu-latest
+    steps:
+    
+      - name: checkout
+        uses: actions/checkout@v3
+
+      - name: Create directories
+        run: |
+          mkdir -p res/26-2
+          
+      - name: updating tvi-pt_ch
+        run: sh res/26-2/tviptch.sh
+
+      - name: setup git config with github bot
+        run: |
+          git config user.name "tvi-pt_ch bot"
+          git config user.email "bot@github.com"
+          
+      - name: commit
+        run: |
+          git add PT/cnnpt.m3u8
+          git add PT/tvi.m3u8
+          git add PT/tviint.m3u8
+          git add PT/tvific.m3u8
+          git add PT/tvimai.m3u8
+          git add PT/tvirea.m3u8
+          git add PT/tviafr.m3u8
+          git add PT/vplus.m3u8
+          git add PT/tvificcao.m3u8
+          git add PT/tvireality.m3u8
+          git commit -m "tvi-pt_ch updated"
+          git push
