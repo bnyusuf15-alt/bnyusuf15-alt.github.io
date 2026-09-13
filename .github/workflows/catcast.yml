@@ -2,7 +2,7 @@ name: Update Catcast Streams
 
 on:
   schedule:
-    - cron: '0 */2 * * *'  # Run every 2 hours
+    - cron: '0 * * * *'  # Run every 2 hours
   workflow_dispatch:  # Allow manual trigger
 
 concurrency:
@@ -19,7 +19,12 @@ jobs:
     steps:
     - name: Checkout repository
       uses: actions/checkout@v5
-    
+
+    - name: config
+      run: |
+          git config --global user.email "<>"
+          git config --global user.name "catcast bot"
+          
     - name: Set up Python
       uses: actions/setup-python@v5
       with:
@@ -35,8 +40,6 @@ jobs:
     
     - name: Commit and push changes
       run: |
-        git config --local user.email "github-actions[bot]@users.noreply.github.com"
-        git config --local user.name "github-actions[bot]"
         git add catcast/
         git add -u catcast/
         git diff --quiet && git diff --staged --quiet || (git commit -m "Update Catcast streams [$(date +'%Y-%m-%d %H:%M:%S')]" && git push)
