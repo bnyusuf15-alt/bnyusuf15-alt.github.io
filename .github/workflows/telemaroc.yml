@@ -27,7 +27,7 @@ jobs:
           python -m pip install --upgrade pip
           
       - name: Install requests module
-        run: python3 -m pip install requests
+        run: python3 -m pip install requests bs4
 
       - name: Execute Python script
         run: python3 MA/telemaroc.py > MA/telemaroc.m3u8
