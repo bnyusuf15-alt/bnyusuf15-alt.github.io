@@ -37,4 +37,5 @@ jobs:
 
       - name: git add and commit
         run: |
-          git diff --quiet MA/telemaroc.m3u8 || (git commit -m "telemaroc updated $(date +'%Y-%m-%d %H:%M:%S')" && git push)
+          git add MA/telemaroc.m3u8
+          git diff --cached --quiet || (git commit -m "telemaroc updated $(date +'%Y-%m-%d %H:%M:%S')" && git push)
