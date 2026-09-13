@@ -1,0 +1,35 @@
+name: francetv action
+
+on:
+  schedule:
+    - cron: '22 */2 * * *'
+  
+  workflow_dispatch:
+
+permissions:
+  contents: write
+  
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+    
+      - uses: actions/checkout@v3
+
+      - name: config
+        run: |
+          git config --global user.email "<>"
+          git config --global user.name "francetv bot"
+      
+      - name: updating france4
+        run: python3 FR/france4.py
+        
+      - name: git add
+        run: |
+          git add -A
+          ls -la 
+          
+      - name: commit & push
+        run: |
+          git commit -m "francetv updated"
+          git push
