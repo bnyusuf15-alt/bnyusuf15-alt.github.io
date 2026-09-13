@@ -2,6 +2,7 @@ from urllib.parse import urljoin
 from bs4 import BeautifulSoup
 import requests
 import re
+import json
 
 # Bot korumalarını aşmak için User-Agent header'ı
 HEADERS = {
@@ -83,6 +84,11 @@ if not viewers_url:
     raise ValueError("Ne anahtar ne de regex ile izlenme URL'si bulunamadı.")
   
 # Step 5 & 6: JSON Verisini kaydet
-print("{"videoUrlDash":"video_url_dash","videoUrlHls":"video_url_hls","viewersUrl":"viewers_url","disableBrandingAvailable":true}")
-print("#EXT-X-STREAM-INF:BANDWIDTH=7680000")
-print(video_url_hls)
+output_data = {
+    "videoUrlDash": video_url_dash,
+    "videoUrlHls": video_url_hls,
+    "viewersUrl": viewers_url,
+    "disableBrandingAvailable": True
+}
+
+print(json.dumps(output_data))
