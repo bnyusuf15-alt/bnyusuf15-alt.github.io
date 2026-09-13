@@ -1,0 +1,30 @@
+name: tf1 action
+
+on:
+  schedule:
+    - cron: '35 */2 * * *'
+  
+  workflow_dispatch:
+
+permissions:
+  contents: write
+  
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+    
+      - uses: actions/checkout@v3
+
+      - name: config
+        run: |
+          git config --global user.email "<>"
+          git config --global user.name "tf1 bot"
+      
+      - name: updating tmc
+        run: python3 FR/tmc.py > FR/tmc.m3u8
+        
+      - name: git add and commit
+        run: |
+          git add FR/tmc.m3u8
+          git diff --cached --quiet || (git commit -m "tf1 updated $(date +'%Y-%m-%d %H:%M:%S')" && git push)
