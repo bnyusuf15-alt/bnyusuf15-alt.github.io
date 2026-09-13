@@ -37,11 +37,8 @@ jobs:
           git add PT/cnnpt.m3u8
           git add PT/tvi.m3u8
           git add PT/tviint.m3u8
-          git add PT/tvific.m3u8
           git add PT/tvimai.m3u8
           git add PT/tvirea.m3u8
-          git add PT/tviafr.m3u8
-          git add PT/vplus.m3u8
           git add PT/tvificcao.m3u8
           git add PT/tvireality.m3u8
           git commit -m "tvi-pt_ch updated"
