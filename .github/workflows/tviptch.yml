@@ -25,7 +25,7 @@ jobs:
           mkdir -p res/26-2
           
       - name: updating tvi-pt_ch
-        run: sh res/26-2/tviptch.sh
+        run: sh PT/tviptch.sh
 
       - name: setup git config with github bot
         run: |
