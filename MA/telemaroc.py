@@ -33,6 +33,9 @@ if not token_match:
     token_match = re.search(r'(?:token|st|key|auth)=([a-f0-9]{16,}|[A-Za-z0-9_-]{20,})', response.text)
 
 if not token_match:
+    token_match = re.search(r'/([a-f0-9]{16,}|[A-Za-z0-9_-]{20,})', response.text)
+    
+if not token_match:
     raise ValueError("İframe veya HTML içinde geçerli bir token/parametre bulunamadı.")
 
 token = token_match.group(1)
