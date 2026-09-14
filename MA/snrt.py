@@ -30,7 +30,7 @@ for embed_url in embed_urls:
         
         parts = name.split('_')
         file_name = parts[1] if len(parts) > 1 else name
-        output_file = f"res/26-1/{file_name}.m3u8"
+        output_file = f"MA/{file_name}.m3u8"
         
         print(f"İşleniyor: {file_name}...")
 
