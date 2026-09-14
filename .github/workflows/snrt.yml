@@ -1,0 +1,39 @@
+name: Update SNRT Playlists
+
+on:
+  schedule:
+    - cron: '*/25 * * * *'
+  workflow_dispatch: # Manuel olarak Tetikleme (Actions sekmesinden)
+
+jobs:
+  update:
+    runs-on: ubuntu-latest
+    
+    permissions:
+      contents: write
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.10'
+
+      - name: Install dependencies
+        run: |
+          python -m pip install --upgrade pip
+          pip install requests
+
+      - name: Run playlist script
+        run: python MA/snrt.py
+
+      - name: Commit and push changes
+        run: |
+          git config --global user.name "snrt[bot]"
+          git config --global user.email "<>"
+          git add MA/
+          
+          # Sadece dosyalarda değişiklik varsa commit ve push yap
+          git diff --quiet && git diff --staged --quiet || (git commit -m "Auto-update SNRT M3U8 playlists" && git push)
