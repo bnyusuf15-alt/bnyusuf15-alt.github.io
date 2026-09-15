@@ -2,8 +2,8 @@
 #EXT-X-VERSION:3
 #EXT-X-INDEPENDENT-SEGMENTS
 #EXT-X-STREAM-INF:RESOLUTION=640x360,BANDWIDTH=662200,CODECS="avc1.4d401f,mp4a.40.2",AVERAGE-BANDWIDTH=662200,FRAME-RATE=25
-https://mako-streaming.akamaized.net/stream/hls/live/20000821/k12n12wad/profile/0/hdntl=exp=1789408760~acl=%2f*~data=hdntl~hmac=963fc768b464bc261505ff2322154acf31536f4e95331b9ff5cd458bfee70cfe/profileManifest.m3u8?_uid=3843acb7-3641-406e-9bc3-d172a783b906&rK=b8&_did=3face753-4482-d054-ed04-4056babfb40d
+https://mako-streaming.akamaized.net/stream/hls/live/20000821/k12n12wad/profile/0/hdntl=exp=1789571818~acl=%2f*~data=hdntl~hmac=79a9825120f7af5991c9de13a74860aafe017d24f52afd66d9cc79359c6b8aab/profileManifest.m3u8?_uid=2241237d-ab3a-4e26-8f6e-e4787e5e5536&rK=b4&_did=3face753-4482-d054-ed04-4056babfb40d
 #EXT-X-STREAM-INF:RESOLUTION=768x432,BANDWIDTH=965800,CODECS="avc1.4d4028,mp4a.40.2",AVERAGE-BANDWIDTH=965800,FRAME-RATE=25
-https://mako-streaming.akamaized.net/stream/hls/live/20000821/k12n12wad/profile/1/hdntl=exp=1789408760~acl=%2f*~data=hdntl~hmac=963fc768b464bc261505ff2322154acf31536f4e95331b9ff5cd458bfee70cfe/profileManifest.m3u8?_uid=3843acb7-3641-406e-9bc3-d172a783b906&rK=b8&_did=3face753-4482-d054-ed04-4056babfb40d
+https://mako-streaming.akamaized.net/stream/hls/live/20000821/k12n12wad/profile/1/hdntl=exp=1789571818~acl=%2f*~data=hdntl~hmac=79a9825120f7af5991c9de13a74860aafe017d24f52afd66d9cc79359c6b8aab/profileManifest.m3u8?_uid=2241237d-ab3a-4e26-8f6e-e4787e5e5536&rK=b4&_did=3face753-4482-d054-ed04-4056babfb40d
 #EXT-X-STREAM-INF:RESOLUTION=1024x576,BANDWIDTH=1522400,CODECS="avc1.4d4028,mp4a.40.2",AVERAGE-BANDWIDTH=1522400,FRAME-RATE=25
-https://mako-streaming.akamaized.net/stream/hls/live/20000821/k12n12wad/profile/2/hdntl=exp=1789408760~acl=%2f*~data=hdntl~hmac=963fc768b464bc261505ff2322154acf31536f4e95331b9ff5cd458bfee70cfe/profileManifest.m3u8?_uid=3843acb7-3641-406e-9bc3-d172a783b906&rK=b8&_did=3face753-4482-d054-ed04-4056babfb40d
+https://mako-streaming.akamaized.net/stream/hls/live/20000821/k12n12wad/profile/2/hdntl=exp=1789571818~acl=%2f*~data=hdntl~hmac=79a9825120f7af5991c9de13a74860aafe017d24f52afd66d9cc79359c6b8aab/profileManifest.m3u8?_uid=2241237d-ab3a-4e26-8f6e-e4787e5e5536&rK=b4&_did=3face753-4482-d054-ed04-4056babfb40d
