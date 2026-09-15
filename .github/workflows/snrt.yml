@@ -16,6 +16,11 @@ jobs:
       - name: Checkout repository
         uses: actions/checkout@v4
 
+      - name: config
+        run: |
+          git config --global user.email "<>"
+          git config --global user.name "snrt bot"
+          
       - name: Set up Python
         uses: actions/setup-python@v5
         with:
@@ -31,9 +36,5 @@ jobs:
 
       - name: Commit and push changes
         run: |
-          git config --global user.name "snrt[bot]"
-          git config --global user.email "<>"
           git add MA/
-          
-          # Sadece dosyalarda değişiklik varsa commit ve push yap
           git diff --quiet && git diff --staged --quiet || (git commit -m "Auto-update SNRT M3U8 playlists" && git push)
