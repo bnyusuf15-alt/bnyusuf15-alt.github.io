@@ -65,5 +65,5 @@ if not video_url_hls:
 # Step 5 & 6: Oynatıcıyı doğrudan Master Playlist'e yönlendir
 print("#EXTM3U")
 print("#EXT-X-VERSION:3")
-print("#EXT-X-STREAM-INF:PROGRAM-ID=1,BANDWIDTH=828000,RESOLUTION=576x324,NAME="1080p"")
+print('#EXT-X-STREAM-INF:PROGRAM-ID=1,BANDWIDTH=828000,RESOLUTION=576x324,NAME="1080p"')
 print(video_url_hls)
