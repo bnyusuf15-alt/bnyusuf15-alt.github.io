@@ -1,8 +1,8 @@
 #EXTM3U
 #EXT-X-VERSION:3
-#EXT-X-STREAM-INF:BANDWIDTH=1636391,RESOLUTION=854x480,FRAME-RATE=50,CODECS="avc1.4d401f,mp4a.40.2"
-https://cdn.live.easybroadcast.io/abr_corp/73_tamazight_tccybxt/corp/73_tamazight_tccybxt_480p/chunks_dvr.m3u8?token=_Z1fxfK0UBPOOzPJLD9aB4QG5ve4VxIwo7Jaq8qan1Y&expires=1789496338&token_path=%2Fabr_corp%2F73_tamazight_tccybxt
-#EXT-X-STREAM-INF:BANDWIDTH=780941,RESOLUTION=640x360,FRAME-RATE=50,CODECS="avc1.4d401f,mp4a.40.2"
-https://cdn.live.easybroadcast.io/abr_corp/73_tamazight_tccybxt/corp/73_tamazight_tccybxt_360p/chunks_dvr.m3u8?token=_Z1fxfK0UBPOOzPJLD9aB4QG5ve4VxIwo7Jaq8qan1Y&expires=1789496338&token_path=%2Fabr_corp%2F73_tamazight_tccybxt
-#EXT-X-STREAM-INF:BANDWIDTH=442718,RESOLUTION=426x240,FRAME-RATE=50,CODECS="avc1.4d4016,mp4a.40.2"
-https://cdn.live.easybroadcast.io/abr_corp/73_tamazight_tccybxt/corp/73_tamazight_tccybxt_240p/chunks_dvr.m3u8?token=_Z1fxfK0UBPOOzPJLD9aB4QG5ve4VxIwo7Jaq8qan1Y&expires=1789496338&token_path=%2Fabr_corp%2F73_tamazight_tccybxt
+#EXT-X-STREAM-INF:BANDWIDTH=1628854,RESOLUTION=854x480,FRAME-RATE=50,CODECS="avc1.4d401f,mp4a.40.2"
+https://cdn.live.easybroadcast.io/abr_corp/73_tamazight_tccybxt/corp/73_tamazight_tccybxt_480p/chunks_dvr.m3u8?token=1Kj37vmOXrXc2ilrWE51VK37X5eJ8bPVReK700B6dtM&expires=1789497386&token_path=%2Fabr_corp%2F73_tamazight_tccybxt
+#EXT-X-STREAM-INF:BANDWIDTH=777129,RESOLUTION=640x360,FRAME-RATE=50,CODECS="avc1.4d401f,mp4a.40.2"
+https://cdn.live.easybroadcast.io/abr_corp/73_tamazight_tccybxt/corp/73_tamazight_tccybxt_360p/chunks_dvr.m3u8?token=1Kj37vmOXrXc2ilrWE51VK37X5eJ8bPVReK700B6dtM&expires=1789497386&token_path=%2Fabr_corp%2F73_tamazight_tccybxt
+#EXT-X-STREAM-INF:BANDWIDTH=440894,RESOLUTION=426x240,FRAME-RATE=50,CODECS="avc1.4d4016,mp4a.40.2"
+https://cdn.live.easybroadcast.io/abr_corp/73_tamazight_tccybxt/corp/73_tamazight_tccybxt_240p/chunks_dvr.m3u8?token=1Kj37vmOXrXc2ilrWE51VK37X5eJ8bPVReK700B6dtM&expires=1789497386&token_path=%2Fabr_corp%2F73_tamazight_tccybxt
