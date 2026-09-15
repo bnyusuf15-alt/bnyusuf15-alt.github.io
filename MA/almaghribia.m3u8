@@ -1,8 +1,8 @@
 #EXTM3U
 #EXT-X-VERSION:3
-#EXT-X-STREAM-INF:BANDWIDTH=1641714,RESOLUTION=854x480,FRAME-RATE=50,CODECS="avc1.4d401f,mp4a.40.2"
-https://cdn.live.easybroadcast.io/abr_corp/73_almaghribia_83tz85q/corp/73_almaghribia_83tz85q_480p/chunks_dvr.m3u8?token=yQaW_wg-LOSMOxHCGElHDkYKOCw-Me3CZeF-1jLARgk&expires=1789485728&token_path=%2Fabr_corp%2F73_almaghribia_83tz85q
-#EXT-X-STREAM-INF:BANDWIDTH=779358,RESOLUTION=640x360,FRAME-RATE=50,CODECS="avc1.4d401f,mp4a.40.2"
-https://cdn.live.easybroadcast.io/abr_corp/73_almaghribia_83tz85q/corp/73_almaghribia_83tz85q_360p/chunks_dvr.m3u8?token=yQaW_wg-LOSMOxHCGElHDkYKOCw-Me3CZeF-1jLARgk&expires=1789485728&token_path=%2Fabr_corp%2F73_almaghribia_83tz85q
-#EXT-X-STREAM-INF:BANDWIDTH=440512,RESOLUTION=426x240,FRAME-RATE=50,CODECS="avc1.4d4016,mp4a.40.2"
-https://cdn.live.easybroadcast.io/abr_corp/73_almaghribia_83tz85q/corp/73_almaghribia_83tz85q_240p/chunks_dvr.m3u8?token=yQaW_wg-LOSMOxHCGElHDkYKOCw-Me3CZeF-1jLARgk&expires=1789485728&token_path=%2Fabr_corp%2F73_almaghribia_83tz85q
+#EXT-X-STREAM-INF:BANDWIDTH=1648123,RESOLUTION=854x480,FRAME-RATE=50,CODECS="avc1.4d401f,mp4a.40.2"
+https://cdn.live.easybroadcast.io/abr_corp/73_almaghribia_83tz85q/corp/73_almaghribia_83tz85q_480p/chunks_dvr.m3u8?token=lkfKha-6dMe41sZRDOpzEvG9GQ6WGGNNUe9i3C5DhLE&expires=1789486874&token_path=%2Fabr_corp%2F73_almaghribia_83tz85q
+#EXT-X-STREAM-INF:BANDWIDTH=783181,RESOLUTION=640x360,FRAME-RATE=50,CODECS="avc1.4d401f,mp4a.40.2"
+https://cdn.live.easybroadcast.io/abr_corp/73_almaghribia_83tz85q/corp/73_almaghribia_83tz85q_360p/chunks_dvr.m3u8?token=lkfKha-6dMe41sZRDOpzEvG9GQ6WGGNNUe9i3C5DhLE&expires=1789486874&token_path=%2Fabr_corp%2F73_almaghribia_83tz85q
+#EXT-X-STREAM-INF:BANDWIDTH=442647,RESOLUTION=426x240,FRAME-RATE=50,CODECS="avc1.4d4016,mp4a.40.2"
+https://cdn.live.easybroadcast.io/abr_corp/73_almaghribia_83tz85q/corp/73_almaghribia_83tz85q_240p/chunks_dvr.m3u8?token=lkfKha-6dMe41sZRDOpzEvG9GQ6WGGNNUe9i3C5DhLE&expires=1789486874&token_path=%2Fabr_corp%2F73_almaghribia_83tz85q
